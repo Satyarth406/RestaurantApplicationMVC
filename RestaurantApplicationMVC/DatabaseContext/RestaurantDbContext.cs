@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RestaurantApplication.Models;
+using RestaurantApplicationMVC.Models;
 
-namespace RestaurantApplication.DatabaseContext
+namespace RestaurantApplicationMVC.DatabaseContext
 {
     public class RestaurantDbContext : DbContext
     {

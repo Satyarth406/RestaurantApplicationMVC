@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace RestaurantApplication.Models
+﻿namespace RestaurantApplicationMVC.Models
 {
     public enum CuisineType
     {

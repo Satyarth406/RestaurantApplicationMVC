@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using RestaurantApplicationMVC.Models;
 
 namespace RestaurantApplication.Models
 {
@@ -12,7 +13,6 @@ namespace RestaurantApplication.Models
         public string City { get; set; }
         public string Country { get; set; }
         public bool DineIn { get; set; }
-
         public CuisineType Cuisine { get; set; }
     }
 }
