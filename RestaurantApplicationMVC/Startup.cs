@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RestaurantApplicationMVC.Repository;
 
 namespace RestaurantApplicationMVC
 {
@@ -23,6 +24,7 @@ namespace RestaurantApplicationMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IRestaurantRepository, RestaurantRepository>();
             services.AddControllersWithViews();
         }
 
@@ -50,7 +52,7 @@ namespace RestaurantApplicationMVC
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Restaurants}/{action=Index}/{id?}");
             });
         }
     }

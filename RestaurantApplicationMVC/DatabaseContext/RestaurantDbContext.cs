@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RestaurantApplication.Models;
 using RestaurantApplicationMVC.Models;
 
 namespace RestaurantApplicationMVC.DatabaseContext

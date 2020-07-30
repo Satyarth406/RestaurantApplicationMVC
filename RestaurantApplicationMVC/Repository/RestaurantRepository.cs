@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using RestaurantApplication.Models;
 using RestaurantApplicationMVC.Models;
 
 namespace RestaurantApplicationMVC.Repository
