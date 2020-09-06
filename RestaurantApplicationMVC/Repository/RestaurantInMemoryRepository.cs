@@ -4,7 +4,7 @@ using RestaurantApplicationMVC.Models;
 
 namespace RestaurantApplicationMVC.Repository
 {
-    public class RestaurantRepository : IRestaurantRepository
+    public class RestaurantInMemoryRepository : IRestaurantRepository
     {
         //In-Memory list of data
         public List<Restaurant> RestaurantList = new List<Restaurant>()
